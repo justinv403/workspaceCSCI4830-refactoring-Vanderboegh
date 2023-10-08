@@ -21,6 +21,8 @@ abstract class Template {
       int sum = 0;
       // TODO: Replace the FOR statement below with your answer.
       for (int i = min; i <= max; i++) {
+    	  // add the sum
+    	  sum += apply(i);
       }
       return sum;
    }
@@ -33,7 +35,8 @@ class M1 extends Template {
    @Override
    int apply(int i) {
       // TODO: Replace the statement below with your answer.
-      return 0;
+      // copy functionality from m1
+	  return i;
    }
 }
 
@@ -42,6 +45,7 @@ class M2 extends Template {
    @Override
    int apply(int i) {
       // TODO: Replace the statement below with your answer.
-      return 0;
+	  // copy functionality from m2
+	  return i * i;
    }
 }
